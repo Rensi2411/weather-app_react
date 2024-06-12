@@ -2,6 +2,7 @@ import React from 'react';
 import CurrentWeather from './CurrentWeather';
 import '../style/style.css';
 
+// Function to get the appropriate animation class based on the weather condition
 const getWeatherAnimation = (weatherMain) => {
   switch (weatherMain.toLowerCase()) {
     case 'rain':
@@ -15,7 +16,9 @@ const getWeatherAnimation = (weatherMain) => {
   }
 };
 
+// Component to display weather data
 const WeatherData = ({ cityName, weatherData }) => {
+  // Placeholder content to display when there is no weather data
   if (!weatherData) {
     return (
       <div className="weather-data">
@@ -48,10 +51,14 @@ const WeatherData = ({ cityName, weatherData }) => {
 
   return (
     <div className="weather-data">
+      {/* Display current weather */}
       <CurrentWeather cityName={name} weatherItem={data.list[0]} />
+      
+      {/* Display 5-day weather forecast */}
       <div className="days-forecast">
         <h2>5-Day Forecast</h2>
         <ul className="weather-cards">
+          {/* Display weather forecast for each day */}
           {data.list.slice(1, 6).map((weatherItem, index) => (
             <li key={index} className="card">
               <h3>({weatherItem.dt_txt.split(" ")[0]})</h3>

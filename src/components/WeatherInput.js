@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import '../style/style.css';
 
+// Component for weather input form
 function WeatherInput({ setCityName, fetchCityCoordinates, fetchUserCoordinates }) {
   const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (e) => setInputValue(e.target.value);
 
+  // Handle search button click
   const handleSearch = () => {
-    setCityName(inputValue);
+    setCityName(inputValue); 
     fetchCityCoordinates(inputValue);
-    setInputValue('');
+    setInputValue(''); 
   };
 
+  // Handle "Enter" key press for initiating search
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       handleSearch();
@@ -26,8 +29,8 @@ function WeatherInput({ setCityName, fetchCityCoordinates, fetchUserCoordinates 
         type="text"
         placeholder="E.g., New York, London, Tokyo"
         value={inputValue}
-        onChange={handleInputChange}
-        onKeyPress={handleKeyPress}
+        onChange={handleInputChange} // Update input value on change
+        onKeyPress={handleKeyPress} 
       />
       <button className="search-btn" onClick={handleSearch}>Search</button>
       <div className="separator"></div>

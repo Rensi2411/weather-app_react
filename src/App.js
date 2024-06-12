@@ -22,6 +22,7 @@ function App() {
     try {
       const response = await fetch(WEATHER_API_URL);
       const data = await response.json();
+      console.log(data);
       setWeatherData({ name, data });
     } catch (error) {
       alert("An error occurred while fetching the weather forecast!");
@@ -59,6 +60,7 @@ function App() {
             .then((response) => response.json())
             .then((data) => {
               const { name } = data[0];
+             
               localStorage.setItem('lastLocation', JSON.stringify({ name, latitude, longitude }));
               fetchWeatherData(latitude, longitude, name);
             })
