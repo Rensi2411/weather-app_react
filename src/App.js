@@ -53,8 +53,7 @@ function App() {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-    const API_KEY = "97043ad8e69c222ce4864af5799b52d6";
-
+          const API_KEY = "97043ad8e69c222ce4864af5799b52d6";
           const API_URL = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
           fetch(API_URL)
             .then((response) => response.json())
