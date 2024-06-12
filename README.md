@@ -54,6 +54,9 @@ The Weather App is a web application that provides current weather information a
 ## Deploy Link
 https://66696cc0c13bd69f8f869555--leafy-licorice-77290f.netlify.app/
 
+## Demo video
+https://drive.google.com/file/d/1W4iyxl6AEwVpRQ6orhUELdaQaKnY2HaM/view?usp=sharing
+
 ## Laptop View
 ![Screenshot 2024-06-12 151504](https://github.com/Rensi2411/weather-app_react/assets/131978061/ceeaaaed-c404-4568-99dc-a9adc828d922)
 ![Screenshot 2024-06-12 151558](https://github.com/Rensi2411/weather-app_react/assets/131978061/d893e641-12bf-4a26-a7e5-1791e4b44ab2)
