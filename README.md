@@ -58,8 +58,9 @@ https://leafy-licorice-77290f.netlify.app/
 https://drive.google.com/file/d/1W4iyxl6AEwVpRQ6orhUELdaQaKnY2HaM/view?usp=sharing
 
 ## Laptop View
-![Screenshot 2024-06-12 151504](https://github.com/Rensi2411/weather-app_react/assets/131978061/ceeaaaed-c404-4568-99dc-a9adc828d922)
-![Screenshot 2024-06-12 151558](https://github.com/Rensi2411/weather-app_react/assets/131978061/d893e641-12bf-4a26-a7e5-1791e4b44ab2)
+![Screenshot 2024-06-12 200922](https://github.com/Rensi2411/weather-app_react/assets/131978061/4a7a0e6b-47a6-462e-8136-5738e4a56e7b)
+![Screenshot 2024-06-12 202141](https://github.com/Rensi2411/weather-app_react/assets/131978061/3ff444db-f2de-405d-82a2-956b2afc33f2)
+
 
 ## Tablet View
 ![Screenshot 2024-06-12 151644](https://github.com/Rensi2411/weather-app_react/assets/131978061/8c228e4a-2e9d-4eb0-9860-25b5dda95d26)
