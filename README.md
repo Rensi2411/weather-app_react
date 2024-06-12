@@ -52,7 +52,7 @@ The Weather App is a web application that provides current weather information a
 4. Open your browser and go to http://localhost:3000.
 
 ## Deploy Link
-https://66696cc0c13bd69f8f869555--leafy-licorice-77290f.netlify.app/
+https://leafy-licorice-77290f.netlify.app/
 
 ## Demo video
 https://drive.google.com/file/d/1W4iyxl6AEwVpRQ6orhUELdaQaKnY2HaM/view?usp=sharing
