@@ -4,7 +4,7 @@ import WeatherData from './components/WeatherData';
 import './style/style.css';
 
 function App() {
-  const [cityName, setCityName] = useState('');
+  const [cityName, setCityName] = useState('Vrindavan'); // Default city is vrindavan
   const [weatherData, setWeatherData] = useState(null);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
@@ -16,13 +16,17 @@ function App() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    // Fetch weather data for Vrindavan when the app loads
+    fetchCityCoordinates('Vrindavan');
+  }, []);
+
   const fetchWeatherData = async (latitude, longitude, name) => {
     const API_KEY = "97043ad8e69c222ce4864af5799b52d6";
     const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
     try {
       const response = await fetch(WEATHER_API_URL);
       const data = await response.json();
-      console.log(data);
       setWeatherData({ name, data });
     } catch (error) {
       alert("An error occurred while fetching the weather forecast!");
@@ -60,7 +64,6 @@ function App() {
             .then((response) => response.json())
             .then((data) => {
               const { name } = data[0];
-             
               localStorage.setItem('lastLocation', JSON.stringify({ name, latitude, longitude }));
               fetchWeatherData(latitude, longitude, name);
             })
