@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../style/style.css';
 
 function WeatherInput({ setCityName, fetchCityCoordinates, fetchUserCoordinates }) {
   const [inputValue, setInputValue] = useState('');

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style/style.css';
 
 const WeatherData = ({ cityName, weatherData }) => {
   // Check if weatherData is null or undefined

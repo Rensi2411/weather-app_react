@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import WeatherInput from './components/WeatherInput';
 import WeatherData from './components/WeatherData';
+import './style/style.css';
 
 function App() {
   const [cityName, setCityName] = useState('');
