@@ -47,7 +47,7 @@ The Weather App is a web application that provides current weather information a
 
 3. Start the development server:
    ```bash
-npm start
+   npm start
 
 4. Open your browser and go to http://localhost:3000.
 
