@@ -59,11 +59,12 @@ https://drive.google.com/file/d/1W4iyxl6AEwVpRQ6orhUELdaQaKnY2HaM/view?usp=shari
 
 ## Laptop View
 ![Screenshot 2024-06-12 200922](https://github.com/Rensi2411/weather-app_react/assets/131978061/4a7a0e6b-47a6-462e-8136-5738e4a56e7b)
-![Screenshot 2024-06-12 202141](https://github.com/Rensi2411/weather-app_react/assets/131978061/3ff444db-f2de-405d-82a2-956b2afc33f2)
+![Screenshot 2024-06-12 202523](https://github.com/Rensi2411/weather-app_react/assets/131978061/2bebe7cc-383d-45a3-a2a9-d97170ab06c6)
 
 
 ## Tablet View
-![Screenshot 2024-06-12 151644](https://github.com/Rensi2411/weather-app_react/assets/131978061/8c228e4a-2e9d-4eb0-9860-25b5dda95d26)
+![Screenshot 2024-06-12 202400](https://github.com/Rensi2411/weather-app_react/assets/131978061/7d6c9778-fb0c-4bd8-bfdb-368caebdfd73)
+
 
 ## Mobile View
 ![Screenshot 2024-06-12 151741](https://github.com/Rensi2411/weather-app_react/assets/131978061/fc5ace50-cd03-48d5-849f-12d8e35b227b)
