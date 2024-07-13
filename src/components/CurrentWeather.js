@@ -43,3 +43,4 @@ const CurrentWeather = ({ cityName, weatherItem }) => (
 );
 
 export default CurrentWeather;
+

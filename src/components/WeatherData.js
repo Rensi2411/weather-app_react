@@ -1,3 +1,4 @@
+
 import React from "react";
 import CurrentWeather from "./CurrentWeather";
 import "../style/style.css";
@@ -82,3 +83,8 @@ const WeatherData = ({ cityName, weatherData }) => {
 };
 
 export default WeatherData;
+
+
+
+
+
