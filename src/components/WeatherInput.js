@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
-import '../style/style.css';
+import '../style/tailwind.css';
 
-// Component for weather input form
 function WeatherInput({ setCityName, fetchCityCoordinates, fetchUserCoordinates }) {
   const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (e) => setInputValue(e.target.value);
 
-  // Handle search button click
   const handleSearch = () => {
-    setCityName(inputValue); 
+    setCityName(inputValue);
     fetchCityCoordinates(inputValue);
-    setInputValue(''); 
+    setInputValue('');
   };
 
-  // Handle "Enter" key press for initiating search
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       handleSearch();
@@ -22,19 +19,19 @@ function WeatherInput({ setCityName, fetchCityCoordinates, fetchUserCoordinates 
   };
 
   return (
-    <div className="weather-input">
-      <h3>Enter a City Name</h3>
+    <div className="weather-input flex flex-col items-center mb-8">
+      <h3 className="text-4xl mb-4">Enter a City Name</h3>
       <input
-        className="city-input"
+        className="city-input p-2 border border-gray-400 rounded mb-4"
         type="text"
         placeholder="E.g., New York, London, Tokyo"
         value={inputValue}
-        onChange={handleInputChange} // Update input value on change
-        onKeyPress={handleKeyPress} 
+        onChange={handleInputChange}
+        onKeyPress={handleKeyPress}
       />
-      <button className="search-btn" onClick={handleSearch}>Search</button>
-      <div className="separator"></div>
-      <button className="location-btn" onClick={fetchUserCoordinates}>Current Location</button>
+      <button className="search-btn p-2 bg-blue-500 text-white rounded mb-4" onClick={handleSearch}>Search</button>
+      <div className="separator mb-4"></div>
+      <button className="location-btn p-2 bg-green-500 text-white rounded" onClick={fetchUserCoordinates}>Current Location</button>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import WeatherInput from './components/WeatherInput';
 import WeatherData from './components/WeatherData';
-import './style/style.css';
+import './style/tailwind.css';
 
 function App() {
-  const [cityName, setCityName] = useState('Vrindavan'); // Default city is vrindavan
+  const [cityName, setCityName] = useState('Vrindavan');
   const [weatherData, setWeatherData] = useState(null);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
@@ -17,7 +17,6 @@ function App() {
   }, [theme]);
 
   useEffect(() => {
-    // Fetch weather data for Vrindavan when the app loads
     fetchCityCoordinates('Vrindavan');
   }, []);
 
@@ -90,14 +89,14 @@ function App() {
 
   return (
     <div>
-      <div className="header">
-        <h1>Weather</h1>
+      <div className="header flex items-center justify-between p-4 text-black">
+        <h1 className="text-3xl">Weather</h1>
         <label className="switch">
           <input type="checkbox" checked={theme === 'dark'} onChange={toggleTheme} />
           <span className="slider round"></span>
         </label>
       </div>
-      <div className="container">
+      <div className="container mx-auto p-4">
         <WeatherInput
           setCityName={setCityName}
           fetchCityCoordinates={fetchCityCoordinates}

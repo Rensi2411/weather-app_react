@@ -1,17 +1,14 @@
 import React from 'react';
-import '../style/style.css';
+import '../style/tailwind.css';
 
-// WeatherCard component displays weather information for a specific day
 const WeatherCard = ({ weatherItem }) => (
-  <li>
-    {/* Display the date of the weather forecast */}
-    <h3>{weatherItem.dt_txt.split(" ")[0]}</h3>
+  <li className="flex flex-col items-center p-4 bg-white shadow-md rounded-lg">
+    <h3 className="text-lg font-semibold">{weatherItem.dt_txt.split(" ")[0]}</h3>
     <img
       src={`https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@2x.png`}
       alt="weather-icon"
     />
-    {/* Display the temperature in Celsius for the forecasted day */}
-    <h6>{`${(weatherItem.main.temp - 273.15).toFixed(2)}°C`}</h6>
+    <h6 className="text-xl">{`${(weatherItem.main.temp - 273.15).toFixed(2)}°C`}</h6>
   </li>
 );
 
