@@ -1,18 +1,18 @@
-import React from 'react';
-import CurrentWeather from './CurrentWeather';
-import '../style/style.css';
+import React from "react";
+import CurrentWeather from "./CurrentWeather";
+import "../style/style.css";
 
 // Function to get the appropriate animation class based on the weather condition
 const getWeatherAnimation = (weatherMain) => {
   switch (weatherMain.toLowerCase()) {
-    case 'rain':
-      return 'rain';
-    case 'clouds':
-      return 'clouds';
-    case 'clear':
-      return 'clear';
+    case "rain":
+      return "rain";
+    case "clouds":
+      return "clouds";
+    case "clear":
+      return "clear";
     default:
-      return '';
+      return "";
   }
 };
 
@@ -53,7 +53,7 @@ const WeatherData = ({ cityName, weatherData }) => {
     <div className="weather-data">
       {/* Display current weather */}
       <CurrentWeather cityName={name} weatherItem={data.list[0]} />
-      
+
       {/* Display 5-day weather forecast */}
       <div className="days-forecast">
         <h2>5-Day Forecast</h2>

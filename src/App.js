@@ -27,6 +27,7 @@ function App() {
     try {
       const response = await fetch(WEATHER_API_URL);
       const data = await response.json();
+      console.log(data)
       setWeatherData({ name, data });
     } catch (error) {
       alert("An error occurred while fetching the weather forecast!");
@@ -39,6 +40,7 @@ function App() {
     try {
       const response = await fetch(API_URL);
       const data = await response.json();
+      
       if (!data.length) {
         return alert(`No coordinates found for ${cityName}`);
       }
